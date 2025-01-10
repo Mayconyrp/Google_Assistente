@@ -14,6 +14,7 @@ export class GoogleApiService {
     const oauth2Client = this.googleAuth.getOAuth2Client();
     this.calendar = google.calendar({ version: 'v3', auth: oauth2Client });
   }
+  
 
   // Método genérico para buscar eventos com base em um intervalo de tempo
   async getEventsByTimeRange(startTime: string, endTime: string): Promise<any[]> {

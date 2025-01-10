@@ -97,6 +97,7 @@ export class TelegramBotService {
         ctx.answerCbQuery(); // Para encerrar o callback
       });
   }
+  
   // Comando inicial
   @Start()
   async startCommand(ctx: Context) {
