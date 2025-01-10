@@ -11,7 +11,7 @@ export class GoogleAuth implements OnModuleInit {
     const clientId = this.configService.get<string>('CLIENT_ID');
     const clientSecret = this.configService.get<string>('SECRET_ID');
     const redirectUri = this.configService.get<string>('REDIRECT'); // Certifique-se de usar a URL correta
-
+//
     // Instanciando o OAuth2Client
     this.oauth2Client = new google.auth.OAuth2(clientId, clientSecret, redirectUri);
   }
