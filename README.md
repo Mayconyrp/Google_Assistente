@@ -25,3 +25,41 @@ O bot é iniciado através do Telegram, com a autenticação do usuário por mei
 O usuário pode solicitar informações sobre sua planilha financeira ou eventos agendados.
 O bot responde com os dados mais recentes, retirados das fontes especificadas (planilha e Google Agenda).
 O projeto utiliza integrações de APIs para garantir uma experiência fluida e interativa com os serviços de terceiros.
+
+
+# Como Baixar e Rodar a Aplicação
+
+Siga os passos abaixo para clonar e rodar a aplicação NestJS localmente.
+
+## 1. Clone o Repositório
+
+Clone o repositório para a sua máquina local:
+
+```bash
+$ git clone https://github.com/Mayconyrp/Google_Assistente.git
+```
+## 2. Acesse o diretório
+```bash
+$ cd Google_Assistente
+```
+## 3. Instale as depedências
+```bash
+$ npm install
+```
+## 4. Configuração do Ambiente
+
+Para rodar a aplicação corretamente, você precisará configurar as variáveis de ambiente no arquivo `.env` localizado na raiz do projeto. As credenciais necessárias dependem dos serviços que você está integrando (como Google APIs, OAuth2 e o bot do Telegram). Abaixo estão as variáveis principais que você deve configurar:
+
+**Google API**: 
+   - Você precisará de um **token de autenticação OAuth2** para acessar as APIs do Google (por exemplo, Google Calendar, Google Sheets, etc.). Para obter essas credenciais, siga as instruções da [documentação do Google APIs](https://developers.google.com/identity/protocols/oauth2).
+   
+**Bot do Telegram (BotFather)**:
+   - Crie um bot no Telegram utilizando o [BotFather](https://core.telegram.org/bots#botfather) e obtenha o **Token do Bot**. Esse token será necessário para autenticar seu bot com a plataforma do Telegram.
+
+**Telegraf**:
+   - A biblioteca **Telegraf** é utilizada para interagir com a API do Telegram no seu bot. Certifique-se de adicionar o token do bot no arquivo `.env` para a configuração correta.
+
+## 5. 
+```bash
+$ npm run start
+```
