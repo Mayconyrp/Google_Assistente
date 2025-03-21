@@ -22,26 +22,3 @@ O bot é iniciado através do Telegram, com a autenticação do usuário por mei
 O usuário pode solicitar informações sobre sua planilha financeira ou eventos agendados.
 O bot responde com os dados mais recentes, retirados das fontes especificadas (planilha e Google Agenda).
 O projeto utiliza integrações de APIs para garantir uma experiência fluida e interativa com os serviços de terceiros.
-📋 Como Rodar o Projeto
-Clone o repositório:
-
-3bash
-Copiar código
-git clone https://github.com/usuario/nome-do-repositorio.git
-Instale as dependências:
-
-bash
-Copiar código
-npm install
-Configure as credenciais do Google e o bot do Telegram.
-
-Inicie o projeto:
-
-bash
-Copiar código
-npm run start
-Interaja com o bot no Telegram para consultar as informações.
-
-📌 Links Úteis
-📘 Documentação do Telegraf
-🔗 Google APIs
