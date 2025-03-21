@@ -67,8 +67,7 @@ export class GoogleAuth implements OnModuleInit {
 
     this.oauth2Client.setCredentials(tokens);
 
-    // Salve o token em uma variável de ambiente ou banco de dados
-    // Aqui seria um ponto de persistência (ex.: arquivo ou DB)
+    // Salve o token em uma variável de ambiente
 
     return tokens;
   }
